@@ -12,7 +12,7 @@ const reducer = (state = initalState, action) => {
         ...state,
         results: state.results.concat({
           id: new Date(),
-          value: action.result,
+          value: action.result * 2,
         }), //Instead of push, concat return new array with the argument concatenated
       };
     case actionTypes.DELETE_RESULT:
