@@ -2,6 +2,7 @@ import * as actionTypes from "./actionTypes";
 
 // Sync Action
 export const saveResult = (res) => {
+  // Recommended not to manipulate the data here
   return {
     type: actionTypes.STORE_RESULT,
     result: res,

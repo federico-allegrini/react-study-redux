@@ -7,6 +7,7 @@ const initalState = {
 const reducer = (state = initalState, action) => {
   switch (action.type) {
     case actionTypes.STORE_RESULT:
+      // Recommended manipulate the data here
       return {
         ...state,
         results: state.results.concat({
